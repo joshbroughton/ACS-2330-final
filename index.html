@@ -8,7 +8,7 @@
 	<title>Final Assessment</title>
 </head>
 <body>
-	<div class="container">
+	<main class="container">
 		<article class="article">
 			<form class="slider-form">
 				<label>
@@ -31,9 +31,11 @@
 					<input id="saturation" type="range" min="0" max="200" value="100" />
 				</label>
 			</form>
-			<img src="./dali.png" width="400" height="400"/>
+      <figure>
+        <img src="./dali.png" width="400" height="400" alt="four paitnings of Salvador Dali arranged in a grid"/>
+      </figure>
     </article>
-	</div>
+	</main>
 	<script>
 		const img = document.querySelector('img')
 		let hue = 0

@@ -18,10 +18,10 @@ body {
 }
 
 .slider-form {
-    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 400px;
 }
 
 label {
@@ -35,9 +35,12 @@ span {
 }
 
 
-img {
+figure {
     width: 400px;
+    height: 400px;
     border-left: 2px solid black;
+    padding: 0;
+    margin: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -45,7 +48,7 @@ img {
         flex-direction: column-reverse;
     }
 
-    img {
+    figure {
         border-left: none;
         border-bottom: 2px solid black;
     }
@@ -79,11 +82,15 @@ img {
         border: none;
     }
 
-    img {
+    figure {
         width: 100%;
     }
 
     .slider-form {
+        width: 100%;
+    }
+
+    img {
         width: 100%;
     }
 
