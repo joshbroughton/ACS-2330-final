@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -12,19 +17,81 @@
     border: 2px solid black;
 }
 
-form {
+.slider-form {
     width: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 label {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
+
+span {
+    padding: 20px 2px;
+}
+
 
 img {
     width: 400px;
+    border-left: 2px solid black;
+}
+
+@media screen and (max-width: 800px) {
+	.article {
+        flex-direction: column-reverse;
+    }
+
+    img {
+        border-left: none;
+        border-bottom: 2px solid black;
+    }
+
+    label {
+        flex-direction: row;
+        text-align: right;
+    }
+
+    span {
+        width: 25%;
+        padding-right: 15px;
+    }
+
+    input {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .article {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .slider-form {
+        width: 100%;
+    }
+
+    label {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
